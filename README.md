@@ -1,4 +1,4 @@
-# DMPSystem
+# DMPS
 
 分布式管理系统， 包括日志收集，消息订阅，SOA,集群管理，性能数据监控
 配置文件 Event.Bindings.config</br>
