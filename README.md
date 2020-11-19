@@ -31,7 +31,9 @@ EventContainer.GetInstances<IEventPublisher>("PushEvent").Publish(new ChanageSta
 
 rabbitmq publisher:</br>
 
-
+```csharp
+EventContainer.GetInstances<IEventPublisher>("DMPHubEvent.RabbitMq").Publish(new ChanageStateEvent() { UserID = manager.UserID });
+```
  
 UseRateLimit 每分钟消息消费数限定在多少之内</br>
 UseRetryNum 消息消费失败后重试次数，每次间隔1分钟</br>
